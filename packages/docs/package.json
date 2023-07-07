@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy-storybook": "storybook-to-ghpages",
     "dev": "storybook dev -p 6006",
     "build": "storybook build"
   },
@@ -16,9 +17,12 @@
     "@storybook/addon-interactions": "^7.0.17",
     "@storybook/addon-links": "^7.0.17",
     "@storybook/blocks": "^7.0.17",
+    "@storybook/manager-api": "^7.0.26",
     "@storybook/react": "^7.0.17",
     "@storybook/react-vite": "^7.0.17",
+    "@storybook/storybook-deployer": "^2.8.16",
     "@storybook/testing-library": "^0.0.14-next.2",
+    "@storybook/theming": "^7.0.26",
     "@vitejs/plugin-react": "^4.0.0",
     "prop-types": "^15.8.1",
     "storybook": "^7.0.17",
@@ -26,9 +30,11 @@
   },
   "dependencies": {
     "@ignite-ui/eslint-config": "*",
-    "@ignite-ui/ts-config": "*",
     "@ignite-ui/react": "*",
     "@ignite-ui/tokens": "*",
+    "@ignite-ui/ts-config": "*",
+    "@storybook/addon-a11y": "^7.0.26",
+    "phosphor-react": "^1.4.1",
     "polished": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
